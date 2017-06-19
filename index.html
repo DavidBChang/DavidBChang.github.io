@@ -1,1 +1,393 @@
-Hello World
+<!DOCTYPE html>
+<html class="">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+        
+    :root {
+      --bkgd-multiplier: 200%;
+      --font-weight: 300;
+      --font-family: 'Source Sans Pro', 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+/*      --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;*/
+      --body-font-size: 15px;
+    /*--font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+    }
+    body {
+      /*background-image: url("assets/abstract_tiger_4-wallpaper-1920x1080-dark.jpg");*/
+      /*background-image: url("assets/tiger-light-flip-fade.png"), url("assets/tiger-light-fade.png");*/
+      background-image: url("assets/tiger-very-light-flip-fade.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-attachment: fixed;
+      background-size: var(--bkgd-multiplier);
+      width: 100%;
+      /*height: 100%;*/
+      /*opacity: 0.2*/
+      /*filter: opacity(70%);*/
+    }    
+    a {
+      /*color: #1772d0;*/
+      color: #000c96;
+      text-decoration: none;
+    }
+    a:focus,a:hover {
+      /*color: #f09228;*/
+      color: #A31F34;
+      text-decoration: none;
+    }
+    body,td,th,tr,p,a {
+      font-family: var(--font-family);
+      font-size: var(--body-font-size);
+      font-weight: var(--font-weight);
+    }
+    p,li {
+      color: #000;
+      /*color: white;*/
+    }
+    strong {
+      font-family: var(--font-family);
+      font-size: var(--body-font-size);
+      font-weight: 400;
+    }
+    table {
+      /*background-color: black;*/
+      /*opacity: 0.2;*/
+    }
+    heading, subheading {
+      font-family: var(--font-family);
+      color: black;
+      font-weight: var(--font-weight);
+    }
+    heading {
+      font-size: 22px;
+    }
+    subheading {
+      font-size: 18px;
+    }
+    papertitle {
+      font-family: var(--font-family);
+      font-size: var(--body-font-size);
+      font-weight: 500;
+    }
+    name {
+      font-family: var(--font-family);
+      font-size: 48px;
+      color: black;
+      font-weight: var(--font-weight);
+    }
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+      background-color: #ffffd0;
+    }
+    .tab { 
+      margin-left: 40px; 
+    }
+    .imgborder {
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      background: white;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="http://jonbarron.info/seal_icon.png">
+  <title>Michael Chang</title>
+
+  <link href="./css/css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    .fancybox-margin {
+      margin-right: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td>
+
+          <!-- About -->
+          <table class="about" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td width="67%" valign="middle">
+                  <p align="center">
+                    <name>Michael Chang</name>
+                  </p>
+                  <p>I am an MIT student studying computer science, currently doing research in <a href="http://www.csail.mit.edu/">CSAIL</a> and <a href="http://bcs.mit.edu/">BCS</a> with Professors <a href="http://web.mit.edu/cocosci/josh.html">Josh Tenenbaum</a> and <a href="http://web.mit.edu/torralba/www">Antonio Torralba</a>. Previously I worked at Google, at the University of Michigan with Professor <a href="http://web.eecs.umich.edu/~honglak/">Honglak Lee</a>, at the <a href="https://www.media.mit.edu/">MIT Media Lab</a> with Professor <a href="http://fluid.media.mit.edu/people/pattie-maes">Pattie Maes</a>, and as Strategy Lead in the <a href="http://solar-cars.scripts.mit.edu/main/">MIT Solar Electric Vehicle Team</a>. I will be pursuing a Ph.D. at U.C. Berkeley at <a href="http://bair.berkeley.edu/">Berkeley AI Research</a> beginning fall 2017.
+                  </p>
+                  <p align="center">
+                    <a href="https://scholar.google.com/citations?user=vgfGtykAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                    <a href="https://www.linkedin.com/in/mbchang">LinkedIn</a> &nbsp;/&nbsp;
+                    <a href="https://github.com/mbchang">Github</a> &nbsp;/&nbsp;
+                    <a href="https://twitter.com/mmmbchang">Twitter</a> &nbsp;/&nbsp;
+                    <a href="https://www.collegeswimming.com/swimmer/141629/">Swimming</a>
+                  </p>
+                  <p align="center">
+                  [ <a href="#news">News</a> | <a href="#talks">Talks</a> | <a href="#research">Research</a> | <a href="#readings">Readings</a>] 
+                  </p>
+                </td>
+                <td width="33%">
+                  <img src="./assets/profile-circle-10.png">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- News -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td width="100%" valign="middle">
+                  <heading id="news">News</heading>
+                  <ul>
+                    <li>February 2017: "A Compositional Object-Based Approach to Learning Physical Dynamics" has been accepted to ICLR 2017.</li>
+                    <li>March 2016: "Understanding Visual Concepts with Continuation Learning" has been accepted to ICLR 2016 Workshop.</li>
+                    <li>March 2015: Press Article - <a href="http://news.mit.edu/2015/finger-mounted-reading-device-blind-0310">Finger-Mounted Reading Device for the Blind</a>, with <a href="http://hi.cs.stonybrook.edu/">Roy Shilkrot</a> and Marcelo Polanco.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Talks -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td width="100%" valign="middle">
+                  <heading id="talks">Talks</heading>
+                  <ul>
+                    <li>May 2017: <a href="https://mila.umontreal.ca/en/">Montreal Institute for Learning Algorithms, Montréal</a>. "Learning Visual and Physical Models of the Environment"</li>
+                    <li>March 2017: <a href="https://openai.com/">OpenAI, San Francisco</a>. "A Compositional Object-Based Approach to Learning Physical Dynamics"</li>
+                    <li>February 2017: <a href="http://nlp.seas.harvard.edu/">Harvard NLP, Cambridge</a>. "Learning Visual and Physical Models of the Environment"</li>
+                    <li>January 2017: <a href="https://research.google.com/">Google, Cambridge</a>. "Learning Visual and Physical Models of the Environment"</li>
+                    <li>April 2016: <a href="http://eecscon.mit.edu/">MIT EECScon, Cambridge</a>. "Understanding Visual Concepts with Continuation Learning"</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Research Header -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td width="100%" valign="middle">
+                  <heading id="research">Research</heading>
+                  <p>
+                    I am interested in recursive self-improvement, learning compositional programs, curiosity, and theory of mind.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+
+              <!-- A Compositional Object-Based Approach to Learning Physical Dynamics -->
+              <tr>
+                <td width="25%">
+                  <div class="imgborder">
+                    <img src="./assets/balls_n7_npe_pred_batch0_ex0.gif" width="100%" height="100%">
+                  </div>
+                </td>
+                <td valign="top" width="75%">
+                  <p>
+                    <a href="https://arxiv.org/abs/1612.00341">
+                      <papertitle>A Compositional Object-Based Approach to Learning Physical Dynamics</papertitle>
+                    </a>
+                    <br>
+                    <strong>Michael B. Chang</strong>, <a href=http://www.mit.edu/~tomeru/>Tomer D. Ullman<a/>, <a href=http://web.mit.edu/torralba/www/>Antonio Torralba</a>, <a href=http://web.mit.edu/cocosci/josh.html>Joshua B. Tenenbaum</a>
+                    <br>
+                    <em>Proceedings of the International Conference on Learning Representations (ICLR)</em>, 2017
+                    <br>
+                    <a href="http://mbchang.github.io/npe/">project webpage</a> /
+                    <a href="https://github.com/mbchang/dynamics">code</a> /
+                    <a href="./assets/npe-poster.pdf">poster</a> /
+                    <a href="https://www.youtube.com/watch?v=ifMRtHRMQe8&feature=youtu.be">spotlight talk (NIPS Intuitive Physics Workshop)</a>
+                  </p>
+                  <p></p>
+                  <p>The Neural Physics Engine (NPE) frames learning a simulator of intuitive physics as learning a compositional program over objects and interactions. This allows the NPE to naturally generalize across variable object count and different scene configurations.</p>
+                </td>
+              </tr>
+
+              <!-- Understanding Visual Concepts with Continuation Learning -->
+              <tr>
+                <td width="25%">
+                  <div class="imgborder">
+                    <img src="./assets/uvc-face.gif" height="100%" align="middle">
+                  </div>
+                </td>
+                <td valign="top" width="75%">
+                  <p>
+                    <a href="https://arxiv.org/abs/1602.06822">
+                      <papertitle>Understanding Visual Concepts with Continuation Learning</papertitle>
+                    </a>
+                    <br>
+                    <a href="http://www.willwhitney.com">William F. Whitney</a>, <strong>Michael B. Chang</strong>, <a href=https://tejasdkulkarni.github.io/>Tejas D. Kulkarni</a>, <a href=http://web.mit.edu/cocosci/josh.html>Joshua B. Tenenbaum</a>
+                    <br>
+                    <em>International Conference on Learning Representations (ICLR) Workshop</em>, 2016
+                    <br>
+                    <a href="http://willwhitney.github.io/understanding-visual-concepts/">project webpage</a> /
+                    <a href="https://github.com/willwhitney/understanding-visual-concepts">code</a>
+                  </p>
+                  <p></p>
+                  <p>This paper presents an unsupervised approach to learning factorized symbolic representations of high-level visual concepts by exploiting temporal continuity in the scene.</p>
+                </td>
+              </tr>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td width="100%" valign="middle">
+                  <heading id="readings">Readings</heading>
+                  <p>
+                    Here are some of my past and current readings that have changed the way I think. Also take a look at <a href="https://docs.lucasem.com/readings/">Lucas Morales' reading list</a>, the <a href="http://probcomp.csail.mit.edu/readings/">MIT Probabilistic Computing Project's reading list</a>, and <a href="https://www.reddit.com/r/MachineLearning/comments/2xcyrl/i_am_j%C3%BCrgen_schmidhuber_ama/cp5c0py/">Jüergen Schmidhuber's recommended readings</a>.
+                  </p>
+
+                  <br><subheading class="tab">Longer Works</subheading>
+
+                  <p class="tab"><a href="https://www.amazon.com/Society-Mind-Marvin-Minsky/dp/0671657135">The Society of Mind</a> - Marvin Minsky</p>
+
+                  <p class="tab"><a href="https://www.amazon.com/Three-Kingdoms-Historical-Guanzhong-Luo/dp/0520282167">Three Kingdoms</a> - Luo Guanzhong</p>
+
+                  <p class="tab"><a href="https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359">The Beginning of Infinity</a> - David Deutsch</p>
+
+                  <p class="tab"><a href="https://www.amazon.com/Little-Prince-Antoine-Saint-Exup%C3%A9ry/dp/0156012197/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&psc=1&refRID=TZSP8PQWMETQSVS3H9PN">The Little Prince</a> - Antoine de Saint-Exupéry</p>
+
+                  <p class="tab"><a href="https://www.amazon.com/Zhuangzi-Essential-Selections-Traditional-Commentaries/dp/0872209113/ref=asap_bc?ie=UTF8">Zhuangzi</a> - Zhuangzi</p>
+
+                  <p class="tab"><a href="https://www.amazon.com/Structure-Scientific-Revolutions-Thomas-Kuhn/dp/0226458083">The Structure of Scientific Revolutions</a> - Thomas Kuhn</p>
+
+                  <p class="tab"><a href="https://www.amazon.com/Hegemony-Survival-Americas-Dominance-American/dp/0805076883">Hegemony or Survival</a> - Noam Chomsky</p>
+
+                  <p class="tab"><a href="http://incompleteideas.net/sutton/book/bookdraft2016sep.pdf">Reinforcement Learning: An Introduction</a> - Richard S. Sutton and Andrew G. Barto</p>
+
+                  <p class="tab"><a href="https://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567">Gödel, Escher, Bach: an Eternal Golden Braid</a> - Douglas Hofstadter</p>
+
+                  <p class="tab"><a href="https://mitpress.mit.edu/sicp/">Structure and Interpretation of Computer Programs</a> - Harold Abelson and Gerald Sussman with Julie Sussman</p>
+
+                  <p class="tab"><a href="http://www.feynmanlectures.caltech.edu/">The Feynman Lectures on Physics</a> - Richard P. Feynman, Robert B. Leighton, Matthew Sands</p>
+
+                  <p class="tab"><a href="https://www.gutenberg.org/files/1497/1497-h/1497-h.htm">Republic</a> - Plato</p>
+
+                  <p class="tab"><a href="https://www.amazon.com/Tao-Te-Ching-Laozi/dp/1535229330">Tao Te Ching</a> - Laozi</p>
+
+                  <br><subheading class="tab">Shorter Works</subheading>
+
+                  <p class="tab"><a href="http://www.columbia.edu/itc/english/f1124y-001/resources/Longfellow.pdf">A Psalm of Life</a> - Henry Wadsworth Longfellow</p>
+                  
+                  <p class="tab"><a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.pdf">You and Your Research</a> - Richard Hamming</p>
+                  
+                  <p class="tab"><a href="https://arxiv.org/abs/1604.00289">Building Machines that Think and Learn Like People</a> - Brendan M. Lake, Tomer D. Ullman, Joshua B. Tenenbaum, Samuel J. Gershman</p>
+                  
+                  <p class="tab"><a href="https://courses.csail.mit.edu/6.803/pdf/steps.pdf">Steps Toward Artificial Intelligence</a> - Marvin Minsky</p>
+                  
+                  <p class="tab"><a href="http://web.mit.edu/STS.035/www/PDFs/think.pdf">As We May Think</a> - Vannevar Bush</p>
+
+                  <p class="tab"><a href="http://xroads.virginia.edu/~hyper/poe/composition.html">The Philosophy of Composition</a> - Edgar Allan Poe</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Website Credits -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td>
+                  <br>
+                  <p align="right">
+                    <font size="2">
+                      <a href="http://jonbarron.info/">website template credits</a>
+                    </font>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Website Tracking -->
+
+          <!-- Scripts -->
+          <script>
+            (function(){
+              var htmlStyles = window.getComputedStyle(document.querySelector("html"));
+              var bkgd_multiplier = parseFloat(htmlStyles.getPropertyValue("--bkgd-multiplier"))/100.0;
+
+              var parallax = document.querySelectorAll("body"),
+                  // speed = 1.0/bkgd_multiplier;
+                  speed = 0.5;
+
+              // console.log(bkgd_multiplier)
+              // console.log(speed)
+              // console.log(Math.max($(document).height(), $(window).height()))
+
+
+              // // do some math to calculate scroll speed based on image height on document height
+              // var img = new Image;
+              // img.src = $(document.body).css('background-image');//.replace(/url\(|\)$/ig, "");
+              // var bgImgWidth = img.width;
+              // var bgImgHeight = img.height;
+
+              // console.log(bgImgHeight)
+
+              window.onscroll = function(){
+                [].slice.call(parallax).forEach(function(el,i){
+
+                  var windowYOffset = window.pageYOffset,
+                      elBackgrounPos = "50% " + (-windowYOffset * speed) + "px";
+
+                  el.style.backgroundPosition = elBackgrounPos;
+
+                });
+              };
+
+          })();
+          </script>
+          <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-98876949-1', 'auto');
+            ga('send', 'pageview');
+
+          </script>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</body>
+
+</html>
