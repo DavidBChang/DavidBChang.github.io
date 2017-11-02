@@ -130,7 +130,7 @@
       z-index: 1;  /*makes the particles go into the background*/
     }
   </style>
-  <link rel="icon" type="image/png" href="http://jonbarron.info/seal_icon.png">
+  <!--<link rel="icon" type="image/png" href="http://jonbarron.info/seal_icon.png">-->
   <title>David Chang</title>
 
   <link href="css" rel="stylesheet" type="text/css">
@@ -168,7 +168,7 @@
 
                     The Team America Rocketry Challenge (TARC) is the world’s largest student rocket competition and a key piece of the aerospace and defense industry’s strategy to build a stronger U.S. workforce in STEM. Approximately 5,000 students from across the nation compete in TARC each year. The contest challenges students to design, build and fly a rocket to safely carry a raw egg payload to a specific altitude and back within a certain amount of time. Based on local qualification flights, the top 100 teams are invited to Washington, D.C. in May for the National Finals. Top placing teams split more than $100,000 in cash and scholarships and the overall winning team will travel to Europe to compete in the International Rocketry Challenge taking place at either the Farnborough or Paris Air Show.
 
-                    The Vertical Projectile team members include David Chang, Albert Wen, Kushagra Pandey, Sahil Patne, Allison Chen, Norman Chu, Brenda Chen, and Claire Chang. During the 2015-2016 contest prep, we incorporated electronics into our rockets in hopes of limiting the margin of error in our flight results. The two electronic devices used in our rockets are the linear actuator and Servo. 
+                    The Vertical Projectile team members include David Chang (me), Albert Wen, Kushagra Pandey, Sahil Patne, Allison Chen, Norman Chu, Brenda Chen, and Claire Chang. During the 2015-2016 contest prep, we incorporated electronics into our rockets in hopes of limiting the margin of error in our flight results. The two electronic devices used in our rockets are the linear actuator and Servo. 
 
                   </p>
                 </td>
@@ -190,7 +190,7 @@
                   <heading id="Linear Actuator">Linear Actuator</heading>
 
                   <p>
-                  The linear actuator controls the parachute of the rocket.
+                  The linear actuator controls the parachute of the rocket. It contracts the parachute by extending its rod and expands the parachute by shrinking its rod.
                   </p>
 
 
@@ -206,13 +206,48 @@
                   <heading id="Servo">Servo</heading>
 
                   <p>
-                  The Servo controls the airbrakes.
+                  The Servo controls the airbrakes. 
                   </p>
 
                  </td>
               </tr>
             </tbody>
           </table>
+
+           <table class="about" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td width="67%" valign="middle">
+
+                  <heading id="The Electronic Control Board">The Electronic Control Board</heading>
+
+                  <p>
+                  
+                      The electronic control board consists of the Pnut altimeter, the teensy control board, the micro SD card module, the battery, and the Linear Actuator. The control board and battery were arranged in a way that maintains a compact structure and makes it simple to repair or replace broken parts.
+
+                  </p>
+                  
+                 </td>
+
+                  </tr>
+              <tr>
+               <td width="50%">
+                  <img src="./ControlBoard.jpg" Width="80%" class="rotateimg180">
+                </td>
+                </tr>
+                 <tr>
+               <td width="50%">
+                  <img src="./FullBoardFront.jpg" Width="20%" class="rotateimg90">
+                </td>
+                </tr>
+                 <tr>
+               <td width="50%">
+                  <img src="./FullBoardSide.jpg" Width="20%" class="rotateimg90">
+                </td>
+                </tr>
+            </tbody>
+          </table>
+               
 
             <table class="about" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <tbody>
@@ -223,7 +258,7 @@
 
                   <p>
                   
-                      We tested using a vacuum chamber.
+                      We tested the servo and linear actuator using a vacuum chamber. I placed the Pnut altimeter in a sealed container attached to a vacuum. Reducing the air pressure in the container simulated an increase or decrease of pressure. Based on the changing altitudes of the altimeter, the linear actuator and servo would act accordingly. 
                   </p>
                   
                  </td>
@@ -233,6 +268,11 @@
               <tr>
                <td width="50%">
                   <img src="./Testingpicvacuum.jpg" Width="20%" class="rotateimg180">
+                </td>
+                </tr>
+                <tr>
+               <td width="50%">
+                  <img src="./Testingpicarduino.jpg" Width="30%" class="rotateimg180">
                 </td>
                 </tr>
             </tbody>
