@@ -190,7 +190,7 @@
                   <heading id="Linear Actuator">Linear Actuator</heading>
 
                   <p>
-                  The linear actuator controls the parachute of the rocket. It contracts the parachute by extending its rod and expands the parachute by shrinking its rod.
+                  The linear actuator controls the parachute of the rocket. It contracts the parachute by extending its rod and expands the parachute by shrinking its rod. I programmed the teensy to detect if the rocket descends faster or slower than its target descent rate. If the rocket descends faster than the target rate, the linear actuator would shrink and expand the parachute, slowing down the rocket. If the rocket descends slower than the target rate, the linear actuator would extend and contract the parachute, giving the rocket more speed.
                   </p>
 
 
@@ -223,7 +223,7 @@
 
                   <p>
                   
-                      The electronic control board consists of the Pnut altimeter, the teensy control board, the micro SD card module, the battery, and the Linear Actuator. The control board and battery were arranged in a way that maintains a compact structure and makes it simple to repair or replace broken parts.
+                      The electronic control board consists of the Pnut altimeter, the teensy control board, the micro SD card module, the battery, and the Linear Actuator. I arranged the control board and battery in a way that maintains a compact structure and makes it simple to repair or replace broken parts. I built four identical models in total.
 
                   </p>
                   
@@ -258,7 +258,7 @@
 
                   <p>
                   
-                      We tested the servo and linear actuator using a vacuum chamber. I placed the Pnut altimeter in a sealed container attached to a vacuum. Reducing the air pressure in the container simulated an increase or decrease of pressure. Based on the changing altitudes of the altimeter, the linear actuator and servo would act accordingly. 
+                      We tested the servo and linear actuator using a vacuum chamber. I placed the Pnut altimeter in a sealed container attached to a vacuum. Reducing the air pressure in the container simulated an increase or decrease of pressure. Based on the changing altitudes of the altimeter, the linear actuator and servo would act accordingly. If the devices do not react, I would check for any mechanical design failures. If no design failures were found, I would know that the code may need revising or debugging. Typically, the devices do react correctly during testing.
                   </p>
                   
                  </td>
